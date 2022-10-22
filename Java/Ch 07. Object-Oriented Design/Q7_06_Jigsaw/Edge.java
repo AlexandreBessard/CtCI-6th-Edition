@@ -1,7 +1,7 @@
 package Q7_06_Jigsaw;
 
 public class Edge {	
-	private Shape shape;
+	private Shape shape; //INNER, OUTER, FLAT
 	private String code; // used to mock how pieces would fit together.
 	private Piece parentPiece;
 	

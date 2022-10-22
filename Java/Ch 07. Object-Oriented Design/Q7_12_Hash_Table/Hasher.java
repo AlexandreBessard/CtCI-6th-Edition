@@ -45,9 +45,11 @@ public class Hasher<K, V> {
 		node = new LinkedListNode<K, V>(key, value);
 		int index = getIndexForKey(key);
 		if (arr.get(index) != null) {
+			//Put node to the head of the list
 			node.next = arr.get(index);
 			node.next.prev = node;
 		}
+		//Set node to the array (Head ListLinkedNode to the array)
 		arr.set(index, node);
 		return null;
 	}

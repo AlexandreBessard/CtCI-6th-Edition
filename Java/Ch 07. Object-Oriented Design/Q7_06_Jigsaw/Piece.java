@@ -5,6 +5,7 @@ import java.util.Map.Entry;
 
 public class Piece {
 	private final static int NUMBER_OF_EDGES = 4;
+	//Orientation: LEFT, RIGHT, TOP, BOTTOM
 	private HashMap<Orientation, Edge> edges = new HashMap<Orientation, Edge>();
 	
 	public Piece(Edge[] edgeList) {		
